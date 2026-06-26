@@ -4,6 +4,7 @@ import styles from "./Projects.module.css";
 import gestureImg from "../../../assets/images/gesturespeechpic.png";
 import vrImg from "../../../assets/images/VRinteraction.png";
 import aetherImg from "../../../assets/images/aether-x1.png";
+import babelImg from "../../../assets/images/babelcity.png";
 
 const projects = [
   {
@@ -35,6 +36,21 @@ const projects = [
     image: aetherImg,
     link: "https://aether-x1-five.vercel.app/",
   },
+
+  {
+  number: "04",
+  title: "BabelCity",
+  description:
+    "A multiplayer metaverse for language learning built in Unity, featuring AI-powered NPCs, interactive cultural districts, and performance optimization for a smooth learning experience.",
+  tech: [
+    "Unity",
+    "C#",
+    "Convai AI",
+    "Photon",
+    "Blender"
+  ],
+  image: babelImg,
+},
 ];
 
 export default function Projects() {
