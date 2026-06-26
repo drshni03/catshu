@@ -1,0 +1,88 @@
+.polaroidContainer {
+  position: relative;
+  transform: rotate(var(--rotate-angle, 3deg));
+  display: inline-block;
+  z-index: 10;
+}
+
+.polaroidBody {
+  background: #faf8f5;
+  padding: 16px 16px 24px 16px;
+  border-radius: 2px;
+  box-shadow: 0 10px 25px -5px rgba(30, 30, 30, 0.12),
+              0 8px 10px -6px rgba(30, 30, 30, 0.12);
+  border: 1px solid rgba(30, 30, 30, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.washiTape {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 110px;
+  height: 28px;
+  opacity: 0.8;
+  z-index: 20;
+  backdrop-filter: blur(0.5px);
+  /* Clip path to simulate jagged torn paper edges */
+  clip-path: polygon(
+    0% 15%, 3% 0%, 97% 0%, 100% 12%, 
+    98% 45%, 100% 85%, 96% 100%, 4% 98%, 
+    0% 80%, 2% 48%
+  );
+  box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.tapeMustard {
+  background: rgba(240, 180, 60, 0.75);
+  border-left: 1px dashed rgba(255, 255, 255, 0.3);
+  border-right: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.tapeTerracotta {
+  background: rgba(201, 107, 68, 0.75);
+  border-left: 1px dashed rgba(255, 255, 255, 0.3);
+  border-right: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.tapeForest {
+  background: rgba(49, 76, 60, 0.75);
+  border-left: 1px dashed rgba(255, 255, 255, 0.3);
+  border-right: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.imageContainer {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  background: var(--color-cream);
+  border: 1px solid rgba(30, 30, 30, 0.08);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.08) contrast(1.02);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.06);
+  pointer-events: none;
+}
+
+.caption {
+  margin-top: 16px;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--color-forest);
+  text-align: center;
+  letter-spacing: 0.5px;
+}

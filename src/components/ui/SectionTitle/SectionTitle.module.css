@@ -1,0 +1,33 @@
+.container {
+  max-width: 650px;
+  margin-bottom: 60px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(198, 109, 68, 0.12);
+  color: var(--color-terracotta);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.1;
+  color: var(--color-forest);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  opacity: 0.8;
+}

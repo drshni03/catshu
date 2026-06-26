@@ -1,0 +1,100 @@
+.stickyNote{
+
+width:180px;
+
+min-height:170px;
+
+padding:28px 22px;
+
+border-radius:6px;
+
+font-family:'Caveat',cursive;
+
+font-size:34px;
+
+line-height:1.15;
+
+color:#4b3d32;
+
+box-shadow:
+0 18px 35px rgba(0,0,0,.12);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+transition:.35s;
+
+}
+
+.noteMustard {
+  background: #fcf1d8;
+  color: #5c3f15;
+  border-left: 2px solid rgba(240, 180, 60, 0.4);
+}
+
+.noteTerracotta {
+  background: #f7e3d8;
+  color: #72341b;
+  border-left: 2px solid rgba(201, 107, 68, 0.4);
+}
+
+.noteCream {
+  background: #faf8f5;
+  color: var(--color-charcoal);
+  border-left: 2px solid rgba(30, 30, 30, 0.1);
+}
+
+.stickyNote:hover{
+
+transform:rotate(-4deg) scale(1.05);
+
+}
+
+/* Red pushpin */
+.pin{
+
+position:absolute;
+
+top:10px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+background:#d6754d;
+
+box-shadow:
+0 2px 8px rgba(0,0,0,.2);
+
+}
+
+.pin::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.content {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
+}

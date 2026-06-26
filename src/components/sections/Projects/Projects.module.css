@@ -1,0 +1,143 @@
+.projects{
+
+padding:140px 24px;
+
+background:#F7F2E8;
+
+}
+
+.grid{
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:40px;
+
+margin-top:70px;
+
+}
+
+.card{
+
+background:white;
+
+padding:25px;
+
+border-radius:28px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.image{
+
+height:220px;
+
+background:#e8e8e8;
+
+border-radius:18px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin-bottom:25px;
+
+font-weight:700;
+
+color:#777;
+
+}
+
+.number{
+
+font-family:var(--font-heading);
+
+font-size:45px;
+
+color:var(--color-terracotta);
+
+}
+
+.card h3{
+
+margin-top:10px;
+
+font-family:var(--font-heading);
+
+font-size:34px;
+
+line-height:1.2;
+
+color:var(--color-forest);
+
+}
+
+.card p{
+
+margin-top:15px;
+
+font-family:var(--font-body);
+
+line-height:1.8;
+
+}
+
+.tech{
+
+display:flex;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin:25px 0;
+
+}
+
+.tech span{
+
+background:#edf1eb;
+
+padding:8px 14px;
+
+border-radius:999px;
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+.projectButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: var(--color-forest);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.projectButton:hover {
+  transform: translateY(-3px);
+  background: var(--color-terracotta);
+}

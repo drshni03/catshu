@@ -1,0 +1,143 @@
+.navbar {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+  pointer-events: none;
+}
+
+.navContainer {
+  pointer-events: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 12px 32px;
+  background: rgba(247, 242, 232, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  box-shadow: 0 8px 32px -6px rgba(30, 30, 30, 0.06),
+              0 1px 2px rgba(30, 30, 30, 0.02);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.paw {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.logoText {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-forest);
+  letter-spacing: 0.5px;
+}
+
+.links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  align-items: center;
+}
+
+.linkItem {
+  position: relative;
+  padding: 6px 4px;
+}
+
+.linkAnchor {
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  transition: color 0.3s ease;
+}
+
+.linkItem:hover .linkAnchor {
+  color: var(--color-terracotta);
+}
+
+.underline {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-terracotta);
+  border-radius: 999px;
+  pointer-events: none;
+  transform-origin: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 24px;
+  border: none;
+  background: var(--color-forest);
+  color: var(--color-cream);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(49, 76, 60, 0.12);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background: #23372c;
+  box-shadow: 0 6px 16px rgba(49, 76, 60, 0.2);
+}
+
+.arrow {
+  font-size: 11px;
+  transition: transform 0.25s ease;
+}
+
+.button:hover .arrow {
+  transform: translate(2px, -2px);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navContainer {
+    padding: 10px 20px;
+  }
+  
+  .links {
+    gap: 20px;
+  }
+
+  .linkAnchor {
+    font-size: 13px;
+  }
+
+  .button {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 520px) {
+  .links {
+    display: none;
+  }
+}
